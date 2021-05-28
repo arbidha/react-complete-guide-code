@@ -1,10 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import Expenses from './components/Expenses';
 
 function App() {
+  const newExpense = [
+    {
+      id: "e1",
+      title: "Car Insurance",
+      amount: 200,
+      date: new Date(2021, 7, 4),
+    },
+    {
+      id: "e2",
+      title: "Apartment Rent",
+      amount: 300,
+      date: new Date(2021, 7, 4),
+    },
+  ];
   return (
     <div className="App">
-      <p>Hello World!</p>
+      <Expenses expense = {newExpense}/>
     </div>
   );
 }
